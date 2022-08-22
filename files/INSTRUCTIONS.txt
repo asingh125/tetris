@@ -1,0 +1,43 @@
+==================
+=: INSTRUCTIONS :=
+==================
+
+Welcome to this implementation of Tetris! This game is based on the original version of Tetris, 
+but incorporates some features and controls from newer version and includes a few completely 
+original features. 
+
+===================
+=: How it Works :=
+===================
+As in original Tetris, pieces fall from the top of the board at a speed of 1 block per second. 
+Once a piece collides with the bottom of the board, or another piece stuck to the board, it sticks 
+to the board and a new piece appears at the top. Whenever a horizontal line is fully colored, the 
+squares in the line disappear and are now empty again. Once the height of stuck pieces reaches the 
+top of the board (or a new piece doesn't have room to spawn), the game is over. 
+
+The goal of the game is to create as many full lines as possible before reaching the top and getting
+a game over. The player's score corresponds to the number of lines they have created. After the game 
+is over, the player is prompted to input their name, and their name and score are recorded in a 
+separate file (a default anonymous name will be provided if the user does not give a name). 
+
+The user can shift the piece left and right and rotate the piece clockwise to fit the piece into 
+existing holes on the board. They can also hold the down arrow key to make the shape fall faster.
+The piece will only move if the movement does not cause a collision with the wall or with another 
+square on the board. 
+
+As in newer versions of Tetris, the player can choose to save the current piece for later, or swap 
+the current piece on the board with the current saved piece, if they've already saved a piece. 
+
+There are also buttons at the top that allow the player to create a new game, pause the game, or 
+view a player's score history, after selecting a user from a dropdown menu of past recorded players.
+The current game status is displayed at the very bottom of the board. 
+
+==============
+=: Controls :=
+==============
+
+Left Arrow - Shift piece left
+Right Arrow - Shift piece right
+Up Arrow - Rotate clockwise 
+Down Arrow - Make piece fall faster 
+Shift - Save piece 
